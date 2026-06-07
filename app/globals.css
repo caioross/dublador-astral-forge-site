@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(900px 500px at 80% -10%, rgba(139, 92, 246, 0.18), transparent 60%),
+    radial-gradient(700px 400px at 10% 10%, rgba(212, 175, 55, 0.12), transparent 60%),
+    linear-gradient(180deg, #0b0a1a 0%, #141229 60%, #0b0a1a 100%);
+  color: #e7e3f5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* starfield */
+.stars::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, #fff, transparent),
+    radial-gradient(1px 1px at 70% 60%, #d4af37, transparent),
+    radial-gradient(1px 1px at 40% 80%, #8b5cf6, transparent),
+    radial-gradient(1px 1px at 90% 20%, #fff, transparent),
+    radial-gradient(1px 1px at 55% 45%, #fff, transparent);
+  background-size: 100% 100%;
+  opacity: 0.5;
+}
+
+.reveal {
+  animation: var(--reveal, none);
+}
+
+::selection {
+  background: #d4af37;
+  color: #0b0a1a;
+}
