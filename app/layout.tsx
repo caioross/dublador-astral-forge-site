@@ -3,7 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 import { LangProvider } from "../components/i18n";
 
-const GA_ID = "G-PLACEHOLDER2";
+const GA_ID = "G-5REBQSDLPM";
 
 export const metadata: Metadata = {
   title: "Dublador Astral Forge",
